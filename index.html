@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Loop Optimization</title>
+	    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+
+		<div class="container">
+			<br />
+			<div class="jumbotron">
+		        <h1>Loop Optimization</h1>
+				<p>
+					This page is used to help evaluate the performance of various configurations of
+					<code>for</code> loops and <code>while</code> loops in order to determine which is the
+					most efficient.
+				</p>
+      		</div><!-- .jumbotron -->
+
+      		<div class="row">
+	      		<div id="generators" class="col-xs-12">
+		      		<h2>1. Generate Elements</h2>
+		      		<p>
+			      		First, we generate a set of elements using the buttons below. For reference, the
+			      		generated elements will appear in the <code>textarea</code>. Once done, move to
+			      		<a href="#">Step 2</a> and start the testing process.
+			      		Once complete, the total time of execution (rounded up in milliseconds) will display
+			      		in the field.
+		      		</p>
+		      		<textarea id="txtCollection" class="form-control" rows="3"></textarea>
+		      		<br />
+		      		<button type="button" id="btnNumbers" class="btn btn-default">Numbers</button>
+		      		&nbsp;
+		      		<button type="button" id="btnLetters" class="btn btn-default">Letters</button>
+		      		&nbsp;
+		      		<button type="button" id="btnAlphaNum" class="btn btn-default">Letters &amp; Numbers</button>
+		      		&nbsp;
+		      		<button type="button" id="btnHTML" class="btn btn-default">HTML</button>
+	      		</div><!-- .col-xs-12 -->
+      		</div><!-- .row -->
+
+	  		<div class="row">
+		  		<div id="tests" class="col-xs-12">
+	  			<h2>2. Run The Test</h2>
+		  			<p>
+			  			Now that you've generated your elements, click on the type of loop to execute
+			  			and view it's total running time (rounded up in milliseconds) in the field below.
+		  			</p>
+		      		<button type="button" id="btnFor1" class="btn btn-default"><code>for</code> one</button>
+		      		&nbsp;
+		      		<button type="button" id="btnFor2" class="btn btn-default"><code>for</code> two</button>
+		      		&nbsp;
+		      		<button type="button" id="btnWhile" class="btn btn-default"><code>while</code></button>
+		      		<br /><br />
+		  			<input type="text" id="txtTime" class="form-control" id="txtTime" placeholder="Total Run Time: 0ms" disabled="disabled">
+	  			</div><!-- .col-xs-12 -->
+	  		</div><!-- .row -->
+
+		</div><!-- .container -->
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script src="js/lib/bootstrap.min.js"></script>
+  	<script src="js/page.js"></script>
+  </body>
+</html>
