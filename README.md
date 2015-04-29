@@ -12,7 +12,7 @@ We'll try to answer the following questions.
 
 ------
 
-These are source files for the Tuts+ tutorial video: [[JavaScript For Loop Optimization][published url]
+These are source files for the Tuts+ tutorial video: [JavaScript For Loop Optimization][published url]
 
 Available on [Tuts+](https://tutsplus.com). Teaching skills to millions worldwide.
 
